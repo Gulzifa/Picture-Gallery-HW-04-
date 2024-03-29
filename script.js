@@ -22,14 +22,14 @@ btn.addEventListener("click", async () => {
                 loadingImages();
             });
     } catch (error) {
-        console.log('Ошибка загрузки изображений:', error);
+        console.log("Ошибка загрузки изображений:", error);
     } finally {
         hideLoader();
     }
 });
 
 function loadingImages() {
-    wrap.innerHTML = '';
+    wrap.innerHTML = "";
 
     for (let i = 0; i < data.length; i++) {
         let catImage = `<img src=${data[i].url} alt="Cat Image"></img>`;
